@@ -1,9 +1,11 @@
 CC=gcc
 DRIVERDIR?=`pwd`/driver
+
 #KDIR?=/lib/modules/`uname -r`/build
-KDIR?=`pwd`/build
+KDIR?=/run/current-system/kernel-modules/lib/modules/6.9.3-zen1/build
 #MODULEDIR?=/lib/modules/`uname -r`/kernel/drivers/usb
-MODULEDIR?=`pwd`/kernel/drivers/usb/
+MODULEDIR?=/run/current-system/kernel-modules/lib/modules/6.9.3-zen1/kernel/drivers/usb/
+
 
 default: build
 
